@@ -30,3 +30,8 @@ run: iso
 # removes the build artifacts to ensure a fresh build every time
 clean:
 	rm -rf *.o *.bin isodir simple_os.iso
+
+#typical work flow
+#make clean     -> Clear old build
+#make           -> Rebuild everything
+#make run       -> Test it in QEMU
