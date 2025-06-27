@@ -15,6 +15,7 @@ kernel.bin: kernel.c
 	i686-elf-gcc -ffreestanding -m32 -c kernel.c -o kernel.o
 	i686-elf-ld -T linker.ld -o kernel.bin -m elf_i386 kernel.o
 
+
 #this builds the bootable .iso image with grub and makes dir structure
 #grub-mkrescue packages it into simple_os.iso
 iso: kernel.bin
